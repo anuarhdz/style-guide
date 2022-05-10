@@ -1,3 +1,5 @@
-import { sidebar } from './scripts/sidebar';
+import './scripts/nav';
+import { mobileMenu } from './scripts/mobile';
 
-sidebar();
+const nav = document.querySelector('#mobile-nav');
+const component = new mobileMenu(nav);

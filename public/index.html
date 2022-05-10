@@ -5,10 +5,435 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Style Guide</title>
-<script defer="defer" src="/js/app.js?deff1eedeedb1f83"></script><link href="css/app.css?deff1eedeedb1f83" rel="stylesheet"></head>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      var mediaQuery = window.matchMedia("(min-width: 1200px)");
+      if (mediaQuery.matches) {
+        document.querySelector('#sidebar-nav').removeAttribute('aria-hidden');
+      }
+    });
+  </script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+  
+<script defer="defer" src="/js/app.js?2a7050562d0fbabb"></script><link href="css/app.css?2a7050562d0fbabb" rel="stylesheet"></head>
 <body>
   
-    <h1>hello style guide</h1>
-  
+      <div class="page-container">
+        <div class="sidebar-container">
+  <header id="header">
+    <div id="mobile-nav" class="mobile-nav-container">
+      <div>
+        <button id="navigation-button" class="menu-button">
+          <span class="icon"></span>
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <div class="logo-container logo-container-mobile">
+          <h1 class="logo-heading">
+            <a href="#" class="logo-link">WhiteLabel</a>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div id="sidebar-nav" class="sidebar-nav-container" aria-hidden="true">
+      <div>
+        <div class="logo-container logo-container-desktop">
+          <h1 class="logo-heading">
+            <a href="#" class="logo-link">WhiteLabel</a>
+          </h1>
+        </div>
+        <div class="navigation-container">
+          <nav class="navigation" id="navigation">
+            <ul>
+              <li class="navigation-item"><a href="#Typography" class="navigation-link">Typography</a></li>
+              <li class="navigation-item"><a href="#Rich-Text" class="navigation-link">Rich Text</a></li>
+              <li class="navigation-item"><a href="#Colors" class="navigation-link">Colors</a></li>
+              <li class="navigation-item"><a href="#Buttons" class="navigation-link">Buttons</a></li>
+              <li class="navigation-item"><a href="#Grids" class="navigation-link">Grids</a></li>
+              <li class="navigation-item"><a href="#Spacers" class="navigation-link">Spacers</a></li>
+              <li class="navigation-item"><a href="#Forms" class="navigation-link">Forms</a></li>
+              <li class="navigation-item"><a href="#Tabs" class="navigation-link">Tabs</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+        <div class="main-container" id="main-container">
+  <main id="main-content">
+    <section class="heading">
+  <div class="container">
+    <h2 class="main-heading heading-lg">Style Guide</h2>
+    <p>This style guide page contains styles and components used through the website. You can change any style from this
+      page and it will be updated throughout the site.</p>
+  </div>
+</section>
+
+
+    <section class="style-section" id="section-Typography">
+  <div class="container">
+    <div class="card style-card-heading">                
+      <h2 class="section-heading heading-md" id="Typography">Typography</h2>
+      <a href="#Typography" class="section-header-anchor" aria-labelledby="Typography">
+        <img src="/images/anchor.svg" alt="" aria-hidden="true">
+      </a>
+      <p>The different text sizes used throughout the site.</p>
+    </div>
+
+    <div class="card style-card">
+      <h4 class="subheader">3x large</h4>
+      <h2 class="heading-3x">This is a header.</h2>
+    </div>
+
+    <div class="card style-card">
+      <h4 class="subheader">2x large</h4>
+      <h2 class="heading-2x">This is a header.</h2>
+    </div>
+
+    <div class="card style-card">
+      <h4 class="subheader">x large</h4>
+      <h2 class="heading-x">This is a header.</h2>
+    </div>
+
+
+    <div class="card style-card">
+      <h4 class="subheader">large</h4>
+      <h2 class="heading-lg">This is a header.</h2>
+    </div>
+
+    <div class="card style-card">
+      <h4 class="subheader">Medium</h4>
+      <h2 class="heading-md">A header.</h2>
+    </div>
+
+    <div class="card style-card">
+      <h4 class="subheader">Small</h4>
+      <h2 class="heading-sm">A header.</h2>
+    </div>
+
+    <div class="card style-card">
+      <h4 class="subheader">x Small</h4>
+      <h2 class="heading-xsm">A header.</h2>
+    </div>
+
+    <hr>
+
+    <div class="card style-card">
+      <h4 class="subheader">Large Paragraph</h4>
+      <p>Avatar Squad is a drop of custom illustrative characters, created by Bob Hanken, aiming to express culture, personality and individuality.</p>
+    </div>
+
+    <div class="card style-card">
+      <h4 class="subheader">Medium Paragraph</h4>
+      <p class="p-medium">Avatar Squad is a drop of custom illustrative characters, created by Bob Hanken, aiming to express culture, personality and individuality.</p>
+    </div>
+
+    <div class="card style-card">
+      <h4 class="subheader">Paragraph</h4>
+      <p class="p-normal">Avatar Squad is a drop of custom illustrative characters, created by Bob Hanken, aiming to express culture, personality and individuality.</p>
+    </div>
+
+    <div class="card style-card">
+      <h4 class="subheader">Small Paragraph</h4>
+      <p class="p-small">Avatar Squad is a drop of custom illustrative characters, created by Bob Hanken, aiming to express culture, personality and individuality.</p>
+    </div>
+
+    <div class="card style-card">
+      <h4 class="subheader">Quote</h4>
+      <blockquote>Avatar Squad is a drop of custom illustrative characters, created by Bob Hanken, aiming to express culture, personality and individuality.</blockquote>
+    </div>
+
+    <div class="card style-card">
+      <h4 class="subheader">List</h4>
+      <ul>
+        <li>Heading line height is fixed</li>
+        <li>All buttons now have tooltips</li>
+        <li>Spell checker number issue fixed</li>
+      </ul>
+      <ol>
+        <li>Heading line height is fixed</li>
+        <li>All buttons now have tooltips</li>
+        <li>Spell checker number issue fixed</li>
+      </ol>
+    </div>
+
+    <div class="card style-card">
+      <h4 class="subheader">Link</h4>
+      <a href="#">Direct link</a>
+      <p><a href="#">Link in a paragraph</a>.</p>
+    </div>
+
+    <div class="card style-card">
+      <h4 class="subheader">Figure with caption</h4>
+      <figure>
+          <img src="https://placehold.co/1024x600.png" alt="" width="1024" height="600">
+        <figcaption>An image with a caption</figcaption>
+      </figure>
+    </div>
+</div></section>
+
+    <div class="container">
+      <div class="section-divider"></div>
+    </div>
+
+    <section class="style-section" id="section-Rich-Text">
+  <div class="container">
+    <div class="card style-card-heading">
+      <h2 class="section-heading heading-md" id="Rich-Text">Rich Text</h2>
+      <a href="#Rich-Text" class="section-header-anchor" aria-labelledby="Rich-Text">
+        <img src="/images/anchor.svg" alt="" aria-hidden="true">
+      </a>
+    </div>
+    <div class="rich-text-container">
+      <h2>This is a header</h2>
+
+      <p>The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.</p>
+
+      <blockquote>A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila!</blockquote>
+
+      <h4>Latest updates</h4>
+      <ul>
+        <li>Heading line height is fixed</li>
+        <li>All buttons now have tooltips</li>
+        <li>Spell checker number issue fixed</li>
+      </ul>
+
+      <a href="#">More about Craft CMS</a>
+
+      <figure>
+          <img src="https://placehold.co/1024x600.png" alt="" width="1024" height="600">
+        <figcaption>An image with a caption</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+    <div class="container">
+      <div class="section-divider"></div>
+    </div>
+
+     <section class="style-section" id="section-Colors">
+  <div class="container">
+    <div class="card style-card-heading">
+      <h2 class="section-heading heading-md" id="Colors">Colors</h2>
+      <a href="#Colors" class="section-header-anchor" aria-labelledby="Colors">
+        <img src="/images/anchor.svg" alt="" aria-hidden="true">
+      </a>
+      <p>The different weights of greys and colours used throughout the website.</p>
+    </div>
+
+    <div class="grid grid-colors">
+      <div class="grid-item bg-black"></div>
+      <div class="grid-item bg-dark-gray"></div>
+      <div class="grid-item bg-gray"></div>
+      <div class="grid-item bg-light-gray"></div>
+      <div class="grid-item bg-soft-gray"></div>
+      <div class="grid-item bg-silver"></div>
+      <div class="grid-item bg-lime"></div>
+      <div class="grid-item bg-lime-hover"></div>
+      <div class="grid-item bg-cyan"></div>
+      <div class="grid-item bg-gradient"></div>
+    </div>
+  </div>
+</section>
+
+    <div class="container">
+      <div class="section-divider"></div>
+    </div>
+
+     <section class="style-section" id="section-Buttons">
+  <div class="container">
+    <div class="card style-card-heading">
+      <h2 class="section-heading heading-md" id="Buttons">Buttons</h2>
+      <a href="#Buttons" class="section-header-anchor" aria-labelledby="Buttons">
+        <img src="/images/anchor.svg" alt="" aria-hidden="true">
+      </a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+    </div>
+
+    <div class="grid grid-buttons">
+      <div class="grid-item">
+        <h4 class="subheader">Primary</h4>
+        <button class="primary">Sign Up</button>
+      </div>
+      <div class="grid-item">
+        <h4 class="subheader">Secondary</h4>
+        <button class="secondary">Contact</button>
+      </div>
+      <div class="grid-item">
+        <h4 class="subheader">Outline</h4>
+        <button class="outline">Contact</button>
+      </div>
+      <div class="grid-item">
+        <h4 class="subheader">Primary</h4>
+        <a class="button primary">Send</a>
+      </div>
+      <div class="grid-item">
+        <h4 class="subheader">Disabled</h4>
+        <button class="primary" disabled="">Sign Up</button>
+      </div>
+      <div class="grid-item">
+        <h4 class="subheader">Disabled</h4>
+        <a class="button secondary" disable="">Not Available</a>
+      </div>
+      <div class="grid-item">
+        <h4 class="subheader">Outline</h4>
+        <a class="button outline">Contact</a>
+      </div>
+      <div class="grid-item">
+        <h4 class="subheader">Primary</h4>
+        <input type="button" class="primary" value="Submit">
+      </div>
+      <div class="grid-item">
+        <h4 class="subheader">Secondary</h4>
+        <input type="submit" class="secondary" value="Submit">
+      </div>
+    </div>
+  </div>
+</section>
+
+    <div class="container">
+      <div class="section-divider"></div>
+    </div>
+
+    <section class="style-section" id="section-Grids">
+  <div class="container">
+    <div class="card style-card-heading">
+      <h2 class="section-heading heading-md" id="Grids">Grids</h2>
+      <a href="#Grids" class="section-header-anchor" aria-labelledby="Grids">
+        <img src="/images/anchor.svg" alt="" aria-hidden="true">
+      </a>
+      <p>Different grid layouts to use across your site.</p>
+    </div>
+
+    <div class="grid-containers">
+      <div class="grid grids" style="--cols: 4;">
+        <div class="grid-item">
+          <h4 class="subheader">4 grid</h4>
+          <div class="grid-block"></div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-block"></div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-block"></div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-block"></div>
+        </div>
+      </div>
+
+      <div class="grid grids" style="--cols:3;">
+        <div class="grid-item">
+          <h4 class="subheader">3 grid</h4>
+          <div class="grid-block"></div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-block"></div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-block"></div>
+        </div>
+      </div>
+
+      <div class="grid grids" style="--cols:2;">
+        <div class="grid-item">
+          <h4 class="subheader">2 grid</h4>
+          <div class="grid-block"></div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-block"></div>
+        </div>
+      </div>
+
+      <div class="grid grids cols" style="--cols:2fr 1fr;">
+        <div class="grid-item">
+          <h4 class="subheader">2-1 grid</h4>
+          <div class="grid-block"></div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-block"></div>
+        </div>
+      </div>
+
+      <div class="grid grids cols" style="--cols:1fr 2fr;">
+        <div class="grid-item">
+          <h4 class="subheader">1-2 grid</h4>
+          <div class="grid-block"></div>
+        </div>
+        <div class="grid-item">
+          <div class="grid-block"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <div class="container">
+      <div class="section-divider"></div>
+    </div>
+
+    <section class="style-section" id="section-Spacers">
+  <div class="container">
+    <div class="card style-card-heading">
+      <h2 class="section-heading heading-md" id="Spacers">Spacers</h2>
+      <a href="#Spacers" class="section-header-anchor" aria-labelledby="Spacers">
+        <img src="/images/anchor.svg" alt="" aria-hidden="true">
+      </a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+    </div>
+  </div>
+</section>
+
+    <div class="container">
+      <div class="section-divider"></div>
+    </div>
+
+    <section class="style-section" id="section-Forms">
+  <div class="container">
+    <div class="card style-card-heading">
+      <h2 class="section-heading heading-md" id="Forms">Forms</h2>
+      <a href="#Forms" class="section-header-anchor" aria-labelledby="Forms">
+        <img src="/images/anchor.svg" alt="" aria-hidden="true">
+      </a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+    </div>
+  </div>
+</section>
+
+    <div class="container">
+      <div class="section-divider"></div>
+    </div>
+
+    <section class="style-section" id="section-Tabs">
+  <div class="container">
+    <div class="card style-card-heading">
+      <h2 class="section-heading heading-md" id="Tabs">Tabs</h2>
+      <a href="#Tabs" class="section-header-anchor" aria-labelledby="Tabs">
+        <img src="/images/anchor.svg" alt="" aria-hidden="true">
+      </a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+    </div>
+  </div>
+</section>
+
+    <div class="container">
+      <div class="section-divider"></div>
+    </div>
+
+  </main>
+
+  <footer>
+  <div class="container">
+    <p>© <strong>Style Guide</strong>. Developed by Anuar Reyes.</p>
+  </div>
+</footer>
+</div>
+      </div>
+    
 </body>
 </html>

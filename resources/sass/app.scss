@@ -1,4 +1,24 @@
 @charset "UTF-8";
 
 // 1. Configuration and helpers
-@import 'abstracts/variables';
+@import 'abstracts/variables',
+'abstracts/mixins';
+
+// base
+@import 'base/normalize',
+'base/base',
+'base/typography';
+
+// components - snippets
+@import 'components/buttons',
+'components/grid-block',
+'components/section-anchors';
+
+// layout
+
+// partials
+@import 'partials/page-container',
+'partials/card',
+'partials/sidebar',
+'partials/main';
+

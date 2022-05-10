@@ -1,0 +1,19 @@
+.section-header-anchor {
+  display: block;
+  position: absolute;
+  left: -2em;
+  top: .5em;
+  outline-color: $black;
+
+  img {
+    display: block;
+    opacity:0;
+    transition: opacity .3s ease;
+  }
+
+  &:focus {
+    img {
+      opacity: 1;
+    }
+  }
+}

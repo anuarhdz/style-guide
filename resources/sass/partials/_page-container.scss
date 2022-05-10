@@ -1,0 +1,26 @@
+.page-container {
+  height: 100%;
+  width: 100%;
+  @media screen and (min-width: map-get($breakpoints, "extra-large")){
+    display: grid;
+    grid-template-columns: 350px 1fr;
+  }
+
+  // .sidebar-container {
+  //   position: relative;
+  // }
+
+  .main-container {
+    // overflow: hidden;
+    // @media screen and (min-width: map-get($breakpoints, "extra-large")){
+    //   overflow: unset;
+    //   overflow-y: scroll;
+    // }
+    main {
+      padding-top: 78px;
+      @media screen and (min-width: map-get($breakpoints, "extra-large")){
+        padding-top: 0;
+      }
+    }
+  }
+}

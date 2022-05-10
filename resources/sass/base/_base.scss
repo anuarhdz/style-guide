@@ -1,0 +1,113 @@
+// Global
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before,
+ *::after {
+   box-sizing: inherit;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.style-guide.body-template {
+  font-family: $text-font;
+  font-weight: 400;
+  height: 100vh;
+}
+
+body {
+  color: $black;
+  font: normal 125% / 1.4 $text-font;
+} 
+
+// Layout
+.container > * {
+  max-width: $max-width;
+}
+
+.navigation {
+  ul, ol {
+    padding: 0;
+    list-style: none;
+  }
+}
+
+// grids
+.grid {
+  display: grid;
+}
+
+// Texts
+a {
+  text-decoration: none;
+
+  @include on-event {
+    text-decoration: underline;
+  }
+}
+
+[class*="-container"]{
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin: 0 0 .5rem 0;
+  }
+}
+
+// dividers
+hr {
+  border: 0;
+  margin: 1em 0;
+  @media screen and (min-width: map-get($breakpoints, "medium")){
+    margin: 2em 0;
+  }
+}
+.section-divider {
+  height: 1px;
+  background-color: $divider;
+  width: 100%;
+  margin: 2em 0;
+  @media screen and (min-width: map-get($breakpoints, "medium")){
+    margin:2em 0 2em 4em;
+  }
+}
+
+// images
+figure {
+  margin: 1em 0;
+
+  img {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  figcaption {
+    margin-top: .5em;
+    text-align: center;
+  }
+}
+
+// colors 
+.bg-black {background-color: $black;}
+.bg-dark-gray {background-color: $dark-gray;}
+.bg-gray {background-color: $gray;}
+.bg-ligth-gray {background-color: $light-gray;}
+.bg-soft-gray {background-color: $soft-gray;}
+.bg-silver {background-color: $silver;}
+.bg-lime {background-color: $lime;}
+.bg-lime-hover {background-color: $limeHover;}
+.bg-cyan {background-color: $cyan;}
+.bg-gradient {
+  background-color: $lime;
+  background-image: $gradient;
+}

@@ -1,0 +1,100 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+
+  @else {
+
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Kitty Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+@mixin full-width-paddings {
+  margin-left: calc(-1 * $padding);
+  margin-right: calc(-1 * $padding);
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-300%);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-300%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@mixin fontSizes($mobile, $tablet, $desktop) {
+  @if $mobile ==$tablet {
+    font-size: $mobile;
+
+    @media screen and (min-width: map-get($breakpoints, "large")) {
+      font-size: $desktop;
+    }
+  }
+
+  @else {
+    font-size: $mobile;
+
+    @media screen and (min-width: map-get($breakpoints, "medium")) {
+      font-size: $desktop;
+    }
+
+    @media screen and (min-width: map-get($breakpoints, "large")) {
+      font-size: $desktop;
+    }
+  }
+}

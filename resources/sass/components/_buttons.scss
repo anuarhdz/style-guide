@@ -1,0 +1,107 @@
+button, .button, [type="button"], [type="submit"]{
+  border: none;
+  background-color: unset;
+  text-align: center;
+  cursor: pointer;
+  
+  &:not(.menu-button){
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: .9em;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: opacity .3s ease;
+    text-decoration: none;
+    outline-color: $lime;
+    display: inline-block;
+    padding: 9px 32px;
+    width: 100%;
+  }
+
+  &.menu-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+
+    &.menu-opened {
+      .icon {
+
+        &::after {
+          width: 90%;
+        }
+        &::before {
+          width: 95%;
+        }
+      }
+    }
+    .icon {
+      display: block;
+      background-color: $black;
+      width: 100%;
+      height: 3px;
+      position: relative;
+      transition: width .3s ease;
+
+      &:after, &:before {
+        content: '';
+        position: absolute;
+        height: 3px;
+        background-color: $black;
+        left: 0;
+        transition: width .3s ease;
+      }
+
+      &:before {
+        top: -7px;
+        width: 45%;
+      }
+      &:after {
+        bottom: -7px;
+        width: 65%;
+      }
+    }
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.primary, &.secondary {
+    color: $main;
+    &:hover {
+      opacity: .75;
+    }
+  }
+
+  &.primary {
+    background-color: $black;
+    border-color: $black; 
+  }
+
+  &.secondary {
+    background-color: $silver;
+    color: $black;
+    border-color: $silver;
+  }
+
+  &.outline {
+    border: 1px solid $black;
+    color: $black;
+    transition: background .3s ease, color .3s ease, border .3s ease;
+
+    &:hover {
+      background-color: $dark-gray;
+      color: $main;
+      border-color: $dark-gray;
+    }
+  }
+
+  &[disabled], &[disabled="disabled"], .disabled {
+    opacity: .1;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
