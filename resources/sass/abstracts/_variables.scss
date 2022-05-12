@@ -2,42 +2,32 @@
 $text-font: 'DM Sans', sans-serif;
 $code-font: 'IBM Plex Mono', monospace;
 
-// happy hues
-$background: #d8eefe;
-$headline: #094067;
-$subheadline: #5f6c7b;
-$cardBackground: #fffffe;
-$cardHeading: #094067;
-$cardParagraph: #5f6c7b;
-$icons: #094067;
-$secondary: #90b4ce;
-$main: #fffffe;
-$tertiary: #ef4565;
-$highlight: #3da9fc;
-$headerBackground: #f7f9fa;
-$headerTextColor: #141618;
-$divider: #dee5eb;
-$sidebarHighlight: #4077d8;
-//$sidebarBackground: #5994fa;
-$gridItemBackground: #d0dbe7;
-$black: #1f1f1f;
-$dark-gray: #464542;
-$gray: #6d6b67;
-$light-gray: #a8a6a0;
-$soft-gray: #e0dfdc;
-$silver: #f7f6f3;
-$lime: #e0f391;
-$limeHover: #d1e67b;
-$cyan: #bdfff9;
-$gradient: linear-gradient(196deg, #e0f391, #e0f391 61%, rgba(224, 243, 145, 0) 74%, #e0f391 88%),
-  linear-gradient(315deg, #bdfff9, #e0f391 61%);
+// colors
+$main: var(--main-background-color);
+$black: var(--black);
+$dark-gray: var(--dark-gray);
+$gray: var(--gray);
+$light-gray: var(--light-gray);
+$soft-gray: var(--soft-gray);
+$mediumGray: var(--medium-gray);
+$silver: var(--silver);
+$lime: var(--lime);
+$limeHover: var(--lime-hover);
+$cyan: var(--cyan);
+$gradient: var(--lime-gradient);
 $buttonBackground: $dark-gray;
 $buttonSecondaryBackground: $silver;
-
+$divider: $soft-gray;
+$gridItemBackground: $mediumGray;
 $blockquoteBorder: 4px solid $lime;
 
 // Containers maximum width
-$max-width: 1024px !default;
+$max-width: var(--max-width);
+$sm: var(--sm);
+$md: var(--md);
+$lg: var(--lg);
+$xlg: var(--xlg);
+
 
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length

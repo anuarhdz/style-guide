@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 // 1. Configuration and helpers
-@import 'abstracts/variables',
+@import 'abstracts/theme',
+'abstracts/variables',
 'abstracts/mixins';
 
 // base
@@ -21,4 +22,3 @@
 'partials/card',
 'partials/sidebar',
 'partials/main';
-

@@ -1,0 +1,47 @@
+:root {
+  // colors
+  --lime: #e0f391;
+  --lime-hover: #d1e67b;
+  --lime-gradient: linear-gradient(196deg, #e0f391, #e0f391 61%, rgba(224, 243, 145, 0) 74%, #e0f391 88%), linear-gradient(315deg, #bdfff9, #e0f391 61%);
+  --black: #1f1f1f;
+  --gray: #6d6b67;
+  --dark-gray: #464542;
+  --medium-gray: #d0dbe7;
+  --light-gray: #a8a6a0;
+  --soft-gray: #e0dfdc;
+  --silver: #f7f6f3;
+  --white: #fffffe;
+  --cyan: #bdfff9;
+  --divider: var(--soft-gray);
+  --primary-color: var(--lime);
+  --primary-color-hover: var(--lime-hover);
+  --primary-gradient: var(--lime-gradient);
+  --main-background-color: var(--white);
+
+  // fonts
+  --general-text-font: 'DM Sans', sans-serif;
+  --general-monospaced-font: 'IBM Plex Mono', monospace;
+  --style-guide-primary-font: var(--general-text-font);
+  --style-guide-secondary-font: var(--general-text-font);
+  --style-guide-monospaced-font: var(--general-monospaced-font);
+
+  // headings
+  --heading-margins: margin: 0 0 .5rem 0;
+  --heading-line-height: 1;
+  --heading-font-weight: 700;
+  --heading-letter-spacing: -.4px;
+  --heading-color-text: var(--black);
+
+
+  // containers
+  --max-width: 1024px;
+  --sm: 320px;
+  --md: 768px;
+  --lg: 1024px;
+  --xlg: 1200px;
+
+  // Components
+  --navigation-font-size:1.15em;
+  --navigation-padding: .8rem 2em;
+
+}
